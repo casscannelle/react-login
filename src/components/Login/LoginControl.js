@@ -37,11 +37,11 @@ export default class LoginControl extends React.Component {
         let button
 
         if(isLoggedIn) {
-            button = <button onClick={this.handleLogout}>Sair</button>
+            button = <button onClick={this.handleLogout}>Logout</button>
         } else {
             button = <div>
-                    <input placeholder='digite seu nome' onChange={e => this.handleName(e.target.value)} />
-                    <button onClick={this.handleLogin}>Acessar</button>
+                    <input placeholder='Digite seu nome' onChange={e => this.handleName(e.target.value)} />{'\n'}
+                    <button onClick={this.handleLogin}>Login</button>
                 </div>
         }
 
